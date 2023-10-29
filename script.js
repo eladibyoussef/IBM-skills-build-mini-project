@@ -22,7 +22,9 @@ function  createTask(){
         <p>${document.querySelector("#newtask input").value}</p>
         </label>
         <div class="delete">
-        <i class="uil uil-trash"></i> </div></div>`;
+        <i class="uil uil-trash"></i> </div></div>
+        `;
+        taskIinput.value = '';
         var current_task = document.querySelectorAll(".delete");
         for (var i=0;i<current_task.length; i++){
             current_task[i].onclick= function(){this.parentNode.remove();}
